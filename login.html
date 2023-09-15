@@ -3,55 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Box</title>
+    <title>Image Gallery</title>
     <style>
         body {
-            background-color: #FFC0CB;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            background-color:lavender; /* Background color for the page */
         }
 
-        .container {
-            background-color: white;
-            padding: 30px; /* Increase padding to increase the box size */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .image {
+            max-width: 100%; /* Make the images as large as their container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .button {
+            background-color: #FF0000; /* Red (#FF0000) */
+            color: #fff;
+            padding: 15px 40px; /* Adjust button padding */
+            font-size: 24px; /* Adjust button font size */
+            border: none;
             border-radius: 10px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 24px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 18px;
-            margin: 10px;
+            cursor: pointer;
+            margin-top: 20px; /* Add margin between image and button */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Login</h1>
-        <p>Name: <input type="text" placeholder="Enter your name"></p>
-        <p>Email Address: <input type="email" placeholder="Enter your email address"></p>
-        <p>Password: <input type="password" placeholder="Enter your password"></p>
-        <p>College Name: <input type="text" placeholder="Enter your college name"></p>
-        <button>Login</button>
+    <div class="image-container">
+        <img src="stu.jpeg" alt="Image 1" class="image"width="250" height="400">
+        <button class="button" onclick="window.location.href='student.html'">STUDENT</button >
+    </div>
+    <div class="image-container">
+        <img src="office.png" alt="Image 2" class="image">
+        <button class="button" onclick="window.location.href='oe.html'">OFFICE EMPLOYEE</button>
+    </div>
+    <div class="image-container">
+        <img src="sport.jpeg" alt="Image 3" class="image">
+        <button class="button" onclick="window.location.href='sp.html'">SPORTS PERSON</button>
+    </div>
+    <div class="image-container">
+        <img src="sw.jpeg" alt="Image 4" class="image">
+        <button class="button" onclick="window.location.href='sw.html'">SOCIAL WORKER</button>
+    </div>
+    <div class="image-container">
+        <img src="pc.jpeg" alt="Image 5" class="image">
+        <button class="button" onclick="window.location.href='pC.html'">PHYSICALLY CHALLENGED</button>
     </div>
 </body>
 </html>

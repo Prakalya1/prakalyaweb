@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health</title>
+    <link rel="stylesheet" href="sports.css">
+    <style>
+        body {
+            background-color:lightpink; /* Background color for the entire page */
+        }
+    </style>
+</head>
+<body>
+    <audio controls autoplay>
+  
+  <source src="audio.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+    
+    <h1 style="text-align: center; color: #3b3d3d;">ANALYSIS</h1>
+    <form id="mentalHealthForm" action="login.html" method="post">
+        <div class="container">
+            <p>
+                Overall how would you rate your mental health?
+            </p>
+            <input type="radio" name="op1" value="Excellent">Excellent
+            <input type="radio" name="op1" value="Somewhat Good">Somewhat Good
+        </div>
+        <div class="container">
+            <p>
+                During the past 4 weeks, have you had any problems with your work or daily life due to any emotional problems, such as feeling depressed, sad or anxious? 
+            </p>
+            <input type="radio" name="op2" value="Yes">Yes
+            <input type="radio" name="op2" value="No">No
+        </div>
+        <div class="container">
+            <p>
+                During the past 4 weeks, how often has your mental health affected your ability to get work done?
+            </p>
+            <input type="radio" name="op3" value="Very often">Very often
+            <input type="radio" name="op3" value="Somewhat often">Somewhat often
+            <input type="radio" name="op3" value="Not so often">Not so often
+            <input type="radio" name="op3" value="Not at all">Not at all
+        </div>
+        <div class="container">
+            <p>
+                During the past two weeks, how often has your mental health affected your relationships?
+            </p>
+            <input type="radio" name="op4" value="Very often">Very often
+            <input type="radio" name="op4" value="Somewhat often">Somewhat often
+            <input type="radio" name="op4" value="Not so often">Not so often
+            <input type="radio" name="op4" value="Not at all">Not at all
+        </div>
+        <div class="container">
+            <p>
+                Have you noticed any change in your diet habits?
+            </p>
+            <input type="radio" name="op5" value="Yes, I eat too much">Yes, I eat too much
+            <input type="radio" name="op5" value="Yes, I don't feel hungry">Yes, I don't feel hungry
+            <input type="radio" name="op5" value="Not much">Not much
+            <input type="radio" name="op5" value="No change">No change
+        </div>
+        <div class="container">
+            <p>
+                How often do you experience below?(Calm and peaceful)
+            </p>
+            <input type="radio" name="op6" value="Never">Never
+            <input type="radio" name="op6" value="Once in a while">Once in a while
+            <input type="radio" name="op6" value="About half the time">About half the time
+            <input type="radio" name="op6" value="Most of the time">Most of the time
+        </div>
+        <div class="container">
+            <p>
+                When was the last time you were really happy?
+            </p>
+            <input type="radio" name="op7" value="Few days ago">Few days ago
+            <input type="radio" name="op7" value="Few weeks ago">Few weeks ago
+            <input type="radio" name="op7" value="Few months ago">Few months ago
+            <input type="radio" name="op7" value="Few years ago">Few years ago
+        </div>
+        <div class="container">
+            <p>
+                How many hours do you sleep per day?
+            </p>
+            <input type="radio" name="op8" value="Less than 4">Less than 4
+            <input type="radio" name="op8" value="4-6">4-6
+            <input type="radio" name="op8" value="7-9">7-9
+            <input type="radio" name="op8" value="9+">9+
+        </div>
+        <div class="container">
+            <p>
+                Do you have any fear of defeating your competitors?
+            </p>
+            <input type="radio" name="op9" value="Very often">Very often
+            <input type="radio" name="op9" value="Somewhat often">Somewhat often
+            <input type="radio" name="op9" value="Not so often">Not so often 
+            <input type="radio" name="op9" value="Not at all">Not at all
+        </div>
+        <div class="container">
+            <p>
+                Are you going through a tough emotional situation?
+            </p>
+            <input type="radio" name="op10" value="Yes">Yes
+            <input type="radio" name="op10" value="No">No
+        </div>
+        <div style="margin: 25px 530px;">
+            <textarea id="additionalInfo" placeholder="Do you want to share any other information"></textarea> 
+        </div>
+        <input type="button" id="submitBtn" value="Submit">
+    </form>
+
+    <script>
+        // JavaScript code can be added here for further functionality if needed
+    </script>
+</body>
+</html>
